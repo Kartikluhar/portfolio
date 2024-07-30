@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div id="loader">
+        <h1>It's</h1>
+        <h1>All About</h1>
+        <h1>Experiences</h1>
+    </div>
+    <header>
+        <nav class="nav" id="navbar">
+            <a href="/index.html" class="myself-a"><img src="images/myself.jpg" class="myself" id="logo"></a>
+            <ul class="menu" id="menu">
+                <a href="#home" class="menu-links" onclick="menuLinkClicked()">
+                    <li>Home</li>
+                </a>
+                <a href="#about" class="menu-links" onclick="menuLinkClicked()">
+                    <li>About</li>
+                </a>
+                <a href="#skills" class="menu-links" onclick="menuLinkClicked()">
+                    <li>Skils</li>
+                </a>
+                <a href="#work" class="menu-links" onclick="menuLinkClicked()">
+                    <li>Work</li>
+                </a>
+                <a href="#contact" class="menu-links" onclick="menuLinkClicked()">
+                    <li>Contact</li>
+                </a>
+            </ul>
+
+            <button class="toggle-menu" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="home" id="home">
+                <div class="home-main">
+                    <h1 class="title">Hello Everyone, <br>I'm <span>Kartik </span><br>Future <span>Computer</span>
+                        Engineer</h1>
+                    <a href="#contact" class="contact-btn">Contact Me</a>
+                </div>
+                <div class="home-contacts">
+                    <a href="https://www.youtube.com/" target="_blank" class="home-contacts-icons"><i
+                            class="fa-brands fa-square-youtube"></i></a>
+                    <a href="https://in.linkedin.com/" target="_blank" class="home-contacts-icons"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="home-contacts-icons"><i
+                            class="fa-brands fa-square-instagram"></i></a>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <h1 class="section-title">About</h1>
+                <div class="about-container">
+                    <div class="about-img">
+
+                    </div>
+                    <div class="about-paragraph">
+                        <h2>I'm Kartik</h2>
+                        <p>I'am a skilled full-stack developer proficient in both front-end and back-end technologies.
+                            With a strong foundation in programming and a knack for problem-solving, I strive to create
+                            innovative and efficient solutions that drive user engagement and business growth.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="skills" id="skills">
+                <h1 class="section-title">Skills</h1>
+                <div class="skills-container">
+                    <div class="skills-paragraph">
+                        <h2>Profesional Skills</h2>
+                        <p>My professional skills as a full-stack developer encompass a wide range of expertise,
+                            including proficiency in front-end technologies like HTML, CSS, JavaScript, and React as
+                            well as back-end technologies such as Node.js,Nest.Js, and database management systems.
+                            Additionally, I possess strong problem-solving abilities, familiarity with version control
+                            systems like Git, and a solid understanding of agile development methodologies.</p>
+                    </div>
+                    <div class="skills-bars">
+                        <div class="skills-bar">
+                            <h2 class="skills-bar-title">Web Development</h2>
+                            <h3 class="skills-bar-para"><span class="counter">50</span>%</h3>
+                        </div>
+                        <div class="skills-bar">
+                            <h2 class="skills-bar-title">Machine Learning</h2>
+                            <h3 class="skills-bar-para"><span class="counter">40</span>%</h3>
+                        </div>
+                        <div class="skills-bar">
+                            <h2 class="skills-bar-title">Programming</h2>
+                            <h3 class="skills-bar-para"><span class="counter">45</span>%</h3>
+                        </div>
+                        <div class="skills-bar">
+                            <h2 class="skills-bar-title">Gaming</h2>
+                            <h3 class="skills-bar-para"><span class="counter">95</span>%</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="work" id="work">
+                <h1 class="section-title">Work</h1>
+                <div class="work-container">
+                    <a href="#"><img src="images/work1.jpg"></a>
+                    <a href="#"><img src="images/work2.jpg"></a>
+                    <a href="#"><img src="images/work3.jpg"></a>
+                    <a href="#"><img src="images/work4.jpg"></a>
+                    <a href="#"><img src="images/work5.jpg"></a>
+                    <a href="#"><img src="images/work6.jpg"></a>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <div class="contact-container">
+                    <form class="form">
+                        <input type="text" class="form-input" placeholder="Name">
+                        <input type="text" class="form-input" placeholder="Email">
+                        <textarea id="textarea" class="form-textarea" placeholder="Your Comments"></textarea>
+                        <input type="submit" value="Submit" class="form-submit">
+                    </form>
+                </div>
+            </section>
+            <div class="nav-canvas" id="nav-canvas"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <h2 class="footer-top-title">Kartik Luhar</h2>
+            <div class="footer-contacts">
+                <a href="https://www.youtube.com/" target="_blank" class="footer-contacts-icons"><i
+                        class="fa-brands fa-square-youtube"></i></a>
+                <a href="https://in.linkedin.com/" target="_blank" class="footer-contacts-icons"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" class="footer-contacts-icons"><i
+                        class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <h3 class="footer-bottom-title">Copyright © Kartik. All Rights Reserved.</h3>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!-- <script src="js/jquery.numscroll.js"></script> -->
+    <script src="js/jqueryScript.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+        integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
