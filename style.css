@@ -512,7 +512,13 @@ footer .footer-bottom .footer-bottom-title {
 @media screen and (max-width: 710px) {
     header .nav{
         justify-content: space-between;
+        padding: 5px 20px;
     }
+
+    header .nav .myself-a .myself {
+        margin-left: 0.5rem;
+    }
+
     .container .nav-canvas{
         display: block;
     }
@@ -589,4 +595,12 @@ footer .footer-bottom .footer-bottom-title {
     main .container .skills .skills-container .skills-bars {
         grid-template-columns: repeat(1, 1fr);
     }
+    header .nav{
+        padding: 5px 10px;
+    }
+
+    header .nav .myself-a .myself {
+        margin-left: 0px;
+    }
+
 }
