@@ -41,3 +41,17 @@ function menuLinkClicked(){
 setTimeout(() => {
     loader.style.top = '-100%';
 }, 4000);
+
+
+// ===== Scroll Animation =====
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2000,
+    delay: 200,
+    // reset: true
+});
+
+sr.reveal('.home, .about, .skills-paragraph, .footer-contacts',{})
+sr.reveal('.form-input, .skills-bar, .work-container a',{interval:200})

@@ -405,6 +405,7 @@ main .container .contact .contact-container .form .form-textarea {
     height: 18rem;
     margin-bottom: 25px;
     color: gray;
+    resize: none;
 }
 
 main .container .contact .contact-container .form .form-submit {
@@ -418,6 +419,10 @@ main .container .contact .contact-container .form .form-submit {
     margin-left: auto;
     color: gray;
     border: none;
+}
+
+main .container .contact .contact-container .form a{
+    text-decoration: none;
 }
 
 main .container .contact .contact-container .form .form-submit:hover {
