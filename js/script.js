@@ -52,6 +52,6 @@ const sr = ScrollReveal({
     delay: 200,
     // reset: true
 });
-
-sr.reveal('.home, .about, .skills-paragraph, .footer-contacts',{})
+sr.reveal('.home, .about',{delay: 4500})
+sr.reveal('.skills-paragraph, .footer-contacts',{})
 sr.reveal('.form-input, .skills-bar, .work-container a',{interval:200})
