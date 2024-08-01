@@ -103,6 +103,7 @@ header .nav .myself-a .myself {
     border: 3px solid white;
     border-radius: 50%;
     margin-left: 1rem;
+    transition: all ease 0.5s;
 }
 /* 
 header .nav .menu-container{
