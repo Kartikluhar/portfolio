@@ -39,7 +39,6 @@ function menuLinkClicked(){
     }else{
         menu.style.top = '80px';
         nav_canvas.style.top = '0';
-        logo.style.opacity = '0';
         flag = 1
     }
 }
