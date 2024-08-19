@@ -20,10 +20,12 @@ function toggleMenu(){
     if (flag == 0) {
         menu.style.top = '80px';
         nav_canvas.style.top = '0';
+        logo.style.opacity = '0';
         flag = 1
     } else {
         menu.style.top = '-30rem';
         nav_canvas.style.top = '-100%';
+        logo.style.opacity = '1';
         flag = 0
     }
 }
@@ -32,10 +34,12 @@ function menuLinkClicked(){
     if (flag == 1) {
         menu.style.top = '-30rem';
         nav_canvas.style.top = '-100%';
+        logo.style.opacity = '1';
         flag = 0
     }else{
         menu.style.top = '80px';
         nav_canvas.style.top = '0';
+        logo.style.opacity = '0';
         flag = 1
     }
 }
